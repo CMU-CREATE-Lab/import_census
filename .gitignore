@@ -1,0 +1,17 @@
+junkyard
+nhgis_downloads
+tiger_downloads
+.venv
+clairton
+edgar_thomson
+irvin
+nhgis_geo_downloads
+node_modules
+scaled_out
+oakland_2020.csv
+scaled_src
+secrets
+shell
+nhgis_api.ipynb
+foo
+__pycache__

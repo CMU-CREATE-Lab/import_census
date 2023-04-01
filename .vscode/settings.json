@@ -1,0 +1,37 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.packageIndexDepths": [
+
+        {
+            "name": "sklearn",
+            "depth": 2
+        },
+        {
+            "name": "matplotlib",
+            "depth": 3
+        },
+        {
+            "name": "scipy",
+            "depth": 2
+        },
+        {
+            "name": "django",
+            "depth": 2
+        },
+        {
+            "name": "pandas",
+            "depth": 4,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "geopandas",
+            "depth": 4,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "shapely",
+            "depth": 4,
+            "includeAllSymbols": true
+        }
+    ]
+}
