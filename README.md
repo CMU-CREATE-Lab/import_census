@@ -1,8 +1,5 @@
 Phase 5:
-Commits
-
-
-Change to use "group" syntax
+DONE Commits
 Are columns actually integers, or strings?
 
 Phase 4:
@@ -33,7 +30,9 @@ DONE * Move .ipynb to .py
 * View some blocks and tracts
 
 
-
+Backlog:
+Consider group(TABLENAME) syntax, e.g.
+https://api.census.gov/data/2000/dec/sf1?get=group(H001)&for=state
 
 
 
