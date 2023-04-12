@@ -33,5 +33,7 @@
             "depth": 4,
             "includeAllSymbols": true
         }
-    ]
+    ],
+    "jupyter.debugJustMyCode": false,
+    "git.rebaseWhenSync": true
 }

@@ -1,6 +1,12 @@
+Phase 6:
+Background kernel running and reconnect
+DONE Don't show progress bars for already-done things
+DONE Add per-dataset progress bar in highlight color
+DONE Make int nullable for tables that have nulls in dec2010
+
 Phase 5:
 DONE Commits
-Are columns actually integers, or strings?
+DONE Convert strings to ints for decennial census
 
 Phase 4:
 Get Oakland geometry
