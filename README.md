@@ -11,6 +11,8 @@ Is the following still needed?
         Warning if geoids are outside expected range
         Warning if record count doesn’t match expected
 
+Consider adding to requirements.txt
+
 DONE Phase 6:
 
 DONE Download ACS2021 5-year except for "missing data" tables
