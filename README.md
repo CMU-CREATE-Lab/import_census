@@ -1,22 +1,27 @@
-Phase 6:
-Background kernel running and reconnect
+Phase 7:
+Understand the missing-data datblase in ACS2021 and improve code to not give exceptions
+Create ACS2022 5-year (When avail 12/7/23)
+Create Decennial 2020 DHC table
+Create Decennial 2020 other tables
+
+Test counts for each table, compare against geometry
+
+Is the following still needed?
+    Delete 2010 and 2000, and try to recreate, watching for geoid conflicts    
+        Warning if geoids are outside expected range
+        Warning if record count doesn’t match expected
+
+DONE Phase 6:
+
+DONE Download ACS2021 5-year except for "missing data" tables
+
 DONE Don't show progress bars for already-done things
 DONE Add per-dataset progress bar in highlight color
 DONE Make int nullable for tables that have nulls in dec2010
 
-Phase 5:
+DONE Phase 5:
 DONE Commits
 DONE Convert strings to ints for decennial census
-
-Phase 4:
-Get Oakland geometry
-Intersect Oakland for blocks
-Use Census API to get 2020, 2010, 2000 populations
-Use NHGIS API to get 1990 populations
-
-
-
-
 
 Phase 3:
 DONE Plume geoms for Mickey

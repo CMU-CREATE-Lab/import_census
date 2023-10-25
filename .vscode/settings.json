@@ -35,5 +35,19 @@
         }
     ],
     "jupyter.debugJustMyCode": false,
-    "git.rebaseWhenSync": true
+    "git.rebaseWhenSync": true,
+    "python.testing.pytestArgs": [
+        ".",
+        "--ignore=utils",
+        "--ignore=junkyard"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "pytest_*.py"
+    ]
 }

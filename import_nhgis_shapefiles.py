@@ -25,8 +25,15 @@ def api():
 
 nhgis_geo_schema = "nhgis_geo_wgs84"
 
-def nhgis_geo_table_name(year: int | str, geo_level_id: str, basis_id: str):
-    return(f"{nhgis_geo_schema}.{geo_level_id}_{year}_{basis_id}")
+@cache
+def nhgis_geo_table_name(year: int | str, geo_level_id: str, basis_id: str|None = None):
+    if basis_id is not None:
+        return(f"{nhgis_geo_schema}.{geo_level_id}_{year}_{basis_id}")
+    else:
+        for table_name in sorted(engine().list_tables(schema=nhgis_geo_schema), reverse = True):
+            if table_name.startswith(f"{geo_level_id}_{year}"):
+                return f"{nhgis_geo_schema}.{table_name}"
+        raise Exception(f"No NHGIS geometry table found for year={year} level={geo_level_id}")
 
 def nhgis_geo_download_year(year: int | str, geo_level_ids: list[str] = ["state", "county", "place", "tract", "blockgroup", "block"]):
     metadata = api().get_shapefiles_metadata().query(f"year == '{year}'")[['geographic_level_id', 'basis_id']].drop_duplicates().to_dict(orient='records') # type: ignore
